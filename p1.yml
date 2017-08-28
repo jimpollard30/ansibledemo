@@ -1,0 +1,11 @@
+---
+
+- hosts: testservers
+  tasks:
+    - name: is ruby the latest
+      yum: name=ruby state=present
+
+  become: true
+  
+
+...
