@@ -8,7 +8,7 @@
     - debug: msg="play_hosts={{play_hosts}}"
       run_once: true
 
-  become: true
+  become: false
   
 
 ...
