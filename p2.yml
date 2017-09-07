@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  tasks:
+    -name: list hosts
+    -debug: msg="play_hosts={{play_hosts}}"
+
+  become: true
+
+...
