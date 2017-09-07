@@ -1,10 +1,13 @@
 ---
 
-- hosts: all
+- hosts: testservers
   tasks:
-    -name: list hosts
-    -debug: msg="play_hosts={{play_hosts}}"
+    - name: is ruby the latest
+      yum: name=ruby state=present
+
+    - debug: msg="play_hosts={{play_hosts}}"
 
   become: true
+  
 
 ...
